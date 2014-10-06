@@ -2,25 +2,39 @@
 <html>
 
 	<head>
-		<div>
-			Crypto-Steganography
+		<div class="title">
+			CRYPTO-STEGANOGRAPHY
 		</div>
 	</head>
 
 	<body ng-app="">
-		<p>
-			What is Crypto-Steganography?
-		</p>
-		<p>
-			It's a nice and secure way to storage your files secretely, in a way the data is only retrieved using a password
-		</p>
-
-		<div ng-init="a='oi'">disse <span ng-bind="a"></span></div>
-
-		<div ng-include="'download_tmpl.html'"></div>
-
 
 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+
+		<div class="main_wrapper">
+			<div class="small_wrapper" ng-init="what_span=true" ng-click="what_span = !what_span">
+				WHAT
+				<p ng-hide="what_span">
+					It's a nice and secure way to storage your files secretely, in a way the data is only retrieved using a password
+				</p>
+			</div>
+			<div class="small_wrapper" ng-click="readme_span = !readme_span">
+				README
+				<p ng-init="readme_span=true" ng-hide="readme_span">heuheuheuhehe</p>
+			</div>
+			<div class="small_wrapper" ng-init="who_span=true" ng-click="who_span = !who_span">
+				WHO
+				<p ng-hide="who_span">
+					Designed by Vitor Costa
+				</p>
+			</div>
+			<div class="small_wrapper" ng-init="download_div=true" ng-click="download_div = !download_div">
+				DOWNLOAD
+				<div ng-hide="download_div" ng-include="'download_tmpl.html'"></div>
+			</div>
+		</div>
+
+		
 
 	</body>
 
