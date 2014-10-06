@@ -13,24 +13,26 @@
 
 		<div class="main_wrapper">
 			<div class="small_wrapper" ng-init="what_span=true" ng-click="what_span = !what_span">
-				WHAT
-				<p ng-hide="what_span">
+				<span class="item_info">WHAT</span>
+				<p class="info" ng-hide="what_span">
 					It's a nice and secure way to storage your files secretely, in a way the data is only retrieved using a password
 				</p>
 			</div>
 			<div class="small_wrapper" ng-click="readme_span = !readme_span">
-				README
-				<p ng-init="readme_span=true" ng-hide="readme_span">heuheuheuhehe</p>
+				<span class="item_info">README</span>
+				<p class="info" ng-init="readme_span=true" ng-hide="readme_span">
+					heuheuheuhehe
+				</p>
 			</div>
 			<div class="small_wrapper" ng-init="who_span=true" ng-click="who_span = !who_span">
-				WHO
-				<p ng-hide="who_span">
+				<span class="item_info">WHO</span>
+				<p class="info" ng-hide="who_span">
 					Designed by Vitor Costa
 				</p>
 			</div>
 			<div class="small_wrapper" ng-init="download_div=true" ng-click="download_div = !download_div">
-				DOWNLOAD
-				<div ng-hide="download_div" ng-include="'download_tmpl.html'"></div>
+				<span class="item_info">DOWNLOAD</span>
+				<div class="info" ng-hide="download_div" ng-include="'download_tmpl.html'"></div>
 			</div>
 		</div>
 
