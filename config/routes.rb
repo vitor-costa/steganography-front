@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get '/' => 'stegano#index'
     get '/download_tmpl.html' => 'stegano#download_tmpl'
     get '/download_c_steganography' => 'stegano#download'
+    get '/show_article' => 'stegano#show_article'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
